@@ -14,6 +14,7 @@ import {
   // Navigate,
   // Outlet,
 } from "react-router-dom";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Resume" element={<Resume />} />
+            <Route path="/ContactUs" element={<ContactUs />} />
           </Routes>
         </div>
       </div>
