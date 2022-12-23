@@ -125,7 +125,7 @@ export default function WhatIdo() {
       <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
         {data.whatIdo.map((item) => {
           return (
-            <div className="about-box bg-[#fcf4ff] dark:bg-transparent">
+            <div className="about-box bg-[#fcf4ff] dark:bg-transparent" key={item.title}>
               <img
                 className="w-10 h-10 object-contain block"
                 src={item.url}

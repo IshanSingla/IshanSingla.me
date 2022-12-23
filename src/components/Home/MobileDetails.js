@@ -53,6 +53,7 @@ export default function MobileDetails() {
                 return (
                   <a
                     href={item ? item.url : ""}
+                    key={item.name}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
