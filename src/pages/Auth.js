@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import { toast } from "react-toastify";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   onAuthStateChangedListener,
   signInAuthUserWithEmailAndPassword,
@@ -63,16 +63,13 @@ export default function Auth() {
   return (
     <div className="overflow-hidden">
       <section className="w-screen h-screen">
-        <div className="flex flex-row p-6 w-full fixed">
-          <img src="/LOGO.png" className="w-12 xs:w-16 h-full"></img>
-        </div>
         <div className="flex justify-center items-center w-full h-screen">
           <div className="flex flex-col justify-center items-center w-full mt-[2rem]">
-            <div className="flex justify-center items-center">
+            <Link className="flex justify-center items-center" to="/">
               <h1 className="text-2xl xxs:text-3xl sm:text-4xl md:text-5xl  font-medium">
                 LOG IN
               </h1>
-            </div>
+            </Link>
             <div className="flex flex-col justify-center items-center h-full w-full p-6">
               <div className="flex flex-col gap-8 w-full">
                 <div className="flex flex-col justify-center items-center">
