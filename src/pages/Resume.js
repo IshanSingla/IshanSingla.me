@@ -21,7 +21,6 @@ export default function Resume() {
           </div>
         </div>
       </div>
-
       <div className="container bg-color-810 dark:bg-[#0D0D0D] py-12 px-2 sm:px-5 md:px-10 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Testimonials />

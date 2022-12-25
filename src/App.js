@@ -4,25 +4,18 @@ import MobileNavbar, { Navbar } from "./components/global/Navbar";
 import NavHeader from "./components/global/NavHeader";
 import Home from "./pages/Home";
 import Resume from "./pages/Resume";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  // Link,
-  // useNavigate,
-  // useLocation,
-  // Navigate,
-  // Outlet,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ContactUs from "./pages/ContactUs";
 import Auth from "./pages/Auth";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AdminRoute from "./Routes/AdminRoute";
+import { FirebaseAnalytics } from "./firebase/analytics/analytics.util";
 
 function App() {
   return (
     <Router>
+      <FirebaseAnalytics />
       <Routes>
         <Route path="/Auth" element={<Auth />} />
         <Route path="/Admin" element={<AdminRoute />} />

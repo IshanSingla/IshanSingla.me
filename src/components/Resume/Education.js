@@ -25,7 +25,10 @@ export default function Education() {
         <h4 className="text-5xl dark:text-white font-medium">Education</h4>
       </div>
       {data.map((item) => (
-        <div key={item.degree} className="bg-[#fff4f4] dark:bg-transparent py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2">
+        <div
+          key={item.degree}
+          className="bg-[#fff4f4] dark:bg-transparent py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2"
+        >
           <span className="text-tiny text-gray-lite dark:text-[#b7b7b7]">
             {item.year}
           </span>

@@ -9,7 +9,7 @@ var testimonials = [
     time: "Sep 2022",
     name: "2nd POSITION IN COFFEE AND CODE (HACKATHON) LEGACY PCLUB UIET",
   },
-]
+];
 
 export default function Testimonials() {
   return (
@@ -19,7 +19,10 @@ export default function Testimonials() {
         <h4 className="text-5xl dark:text-white font-medium">Testimonials</h4>
       </div>
       {testimonials.map((item) => (
-        <div key={item.name} className="bg-[#fff4f4] dark:bg-transparent py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2">
+        <div
+          key={item.name}
+          className="bg-[#fff4f4] dark:bg-transparent py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2"
+        >
           <span className="text-tiny text-gray-lite dark:text-[#b7b7b7]">
             {item.time}
           </span>

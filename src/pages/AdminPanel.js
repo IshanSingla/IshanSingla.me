@@ -14,10 +14,7 @@ export default function AdminPanel() {
   }, []);
   return (
     <div className="flex justify-center items-center w-full h-screen">
-      <button
-        onClick={logout}
-        className="logoutBtn"
-      >
+      <button onClick={logout} className="logoutBtn">
         Logout
       </button>
     </div>

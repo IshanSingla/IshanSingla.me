@@ -110,19 +110,17 @@ export default function Details() {
             </div>
           </div>
           <a href="./IshanSingla-cv.pdf" download={true}>
-          <button className="dowanload-btn">
-            
-            <img
-              className="mr-3"
-              src="https://bostamihtml.ibthemespro.com/images/icons/dowanload.png"
-              alt="icon"
-            />
-            Download CV
-          </button>
+            <button className="dowanload-btn">
+              <img
+                className="mr-3"
+                src="https://bostamihtml.ibthemespro.com/images/icons/dowanload.png"
+                alt="icon"
+              />
+              Download CV
+            </button>
           </a>
         </div>
       </div>
     </div>
   );
 }
-

@@ -15,7 +15,7 @@ export default function MobileNavbar() {
     const menuItemsActiveArray = Array.from(menuItemsActive);
 
     menuToggleBtn?.addEventListener("click", () => {
-      console.log("click");
+      // console.log("click");
       // toggle icons inside button
       navbar.classList.toggle("hidden");
       menuOpen.classList.toggle("hidden");
@@ -24,7 +24,7 @@ export default function MobileNavbar() {
 
     menuItemsArray.forEach((item) => {
       item.addEventListener("click", () => {
-        console.log("click");
+        // console.log("click");
         // toggle icons inside button
         navbar.classList.add("hidden");
         menuOpen.classList.remove("hidden");
@@ -34,7 +34,7 @@ export default function MobileNavbar() {
 
     menuItemsActiveArray.forEach((item) => {
       item.addEventListener("click", () => {
-        console.log("click");
+        // console.log("click");
         // toggle icons inside button
         navbar.classList.add("hidden");
         menuOpen.classList.remove("hidden");

@@ -33,7 +33,7 @@ export default function NavHeader() {
 
   var menuButton = (e) => {
     e.preventDefault();
-    console.log("click");
+    // console.log("click");
     const navbar = document.getElementById("navbar");
     const menuOpen = document.getElementById("menu-toggle-open-icon");
     const menuClose = document.getElementById("menu-toggle-close-icon");

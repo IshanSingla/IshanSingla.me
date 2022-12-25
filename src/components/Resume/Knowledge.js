@@ -13,8 +13,6 @@ var knowledge = [
   "Jankins",
   "AWS",
   "Nginx",
-  
-  
 ];
 
 export default function Knowledge() {
@@ -26,7 +24,9 @@ export default function Knowledge() {
       </div>
       <div className="flex gap-y-5 gap-x-2.5 flex-wrap">
         {knowledge.map((item) => (
-          <button key={item} className="resume-btn">{item}</button>
+          <button key={item} className="resume-btn">
+            {item}
+          </button>
         ))}
       </div>
     </div>
