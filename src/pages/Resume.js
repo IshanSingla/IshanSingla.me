@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../components/global/Footer";
 import Education from "../components/Resume/Education";
 import Experience from "../components/Resume/Experience";
@@ -6,6 +6,10 @@ import Knowledge from "../components/Resume/Knowledge";
 import Testimonials from "../components/Resume/Testimonials";
 
 export default function Resume() {
+  useEffect(() => {
+    document.title = "Resume | IshanSingla's Portfolio";
+  }, []);
+
   return (
     <div className="bg-white lg:rounded-2xl dark:bg-[#111111]">
       <div className="container sm:px-5 md:px-10 lg:px-14">

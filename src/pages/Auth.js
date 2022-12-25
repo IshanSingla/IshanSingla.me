@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from "react";
+import React, { useEffect } from "react";
 import { toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
 import {
@@ -60,6 +60,9 @@ export default function Auth() {
       alert(error);
     }
   };
+  useEffect(() => {
+    document.title = "Login | Admin Panel | IshanSingla's Portfolio";
+  }, []);
   return (
     <div className="overflow-hidden">
       <section className="w-screen h-screen">
